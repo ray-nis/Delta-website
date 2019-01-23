@@ -1,0 +1,80 @@
+.header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+
+    .title {
+        font-size: 2.3em;
+        color: $main-color;
+        text-transform: uppercase;
+        font-family: $main-font;
+    }
+
+    i {
+        font-size: 1.2em;
+        padding: 8px 12px;
+        color: $secondary-color;
+        border: 1px solid #d9dde2;
+    }
+
+    .nav {
+        width: 100%;
+        text-align: center;
+        display: none;
+
+        a {
+            text-decoration: none;
+            color: $secondary-color;
+
+            &:hover {
+                color: $main-color;
+            }
+
+            h1 {
+                font-size: 1.2em;
+                margin-bottom: 20px;
+                font-family: $main-font;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .header {
+        display: flex;
+        flex-wrap: nowrap;
+
+        .nav {
+            display: flex;
+            width: 50%;
+            justify-content: space-around;
+
+            hr {
+                display: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: $secondary-color;
+
+                h1 {
+                    font-size: 1em;
+                    margin-bottom: 0px;
+                    font-family: $main-font;
+                }
+            }
+        }
+    }
+
+    #menuButton {
+        display: none;
+    }
+
+    .title {
+        width: 30%;
+        text-align: center;
+    }
+}
