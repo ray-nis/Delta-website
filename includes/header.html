@@ -3,8 +3,8 @@
     <i id="menuButton" class="fas fa-bars"></i>
     <nav class="nav">
         <hr>
-        <a href="../index.html"><h1>HOME</h1></a>
-        <a href="/pages/about.html"><h1>ABOUT US</h1></a>
+        <a id="m1" href="../index.html"><h1>HOME</h1></a>
+        <a id="m2" href="/pages/about.html"><h1>ABOUT US</h1></a>
         <a href=""><h1>SERVICES</h1></a>
         <a href=""><h1>PORTFOLIO</h1></a>
         <a href=""><h1>PRICING</h1></a>
@@ -16,5 +16,15 @@
         $(".nav").slideToggle("fast", "linear");
     }
     $("#menuButton").click(menuSlide);
+
+    let url = window.location.href;
+    let lastPart = url.substr(url.lastIndexOf('/') + 1);
+
+    if (lastPart === "" || lastPart === "index.html") {
+        document.querySelector("#m1").style.color = "red";
+    } 
+    else if (lastPart === "about.html") {
+        document.querySelector("#m2").style.color = "red";
+    }
 </script>
 </div>
