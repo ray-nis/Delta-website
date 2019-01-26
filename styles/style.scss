@@ -1,6 +1,6 @@
 $main-font: "Open Sans";
 $main-color: #ff5722;
-$secondary-color: #888888;
+$secondary-color: #4e4f51;
 
 @mixin homeTitles() {
     text-align: center;
@@ -23,6 +23,7 @@ $secondary-color: #888888;
 @import "header";
 @import "home";
 @import "homeServices";
+@import "homeAbout";
 
 
 

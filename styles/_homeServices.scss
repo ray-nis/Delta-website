@@ -1,14 +1,12 @@
-.home-services {
-    .home-services-title {
-        @include homeTitles();
-    }
+.home-services-title {
+    @include homeTitles();
+}
 
-    .home-services-pharagraph {
-        @include homePharagraphs();
-        width: 70%;
-        margin: 0 auto;
-        margin-bottom: 40px;
-    }
+.home-services-pharagraph {
+    @include homePharagraphs();
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 .home-services-container {
