@@ -460,6 +460,7 @@
           justify-content: center;
   background-color: #2c2d2d;
   font-family: "Open Sans";
+  padding-bottom: 20px;
 }
 
 .footerContent {
@@ -485,6 +486,48 @@
 
 .footerContent a:hover {
   color: #ff5722;
+}
+
+.footer-social {
+  background-color: #2c2d2d;
+  color: #888888;
+  font-family: "Open Sans";
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.footer-social div {
+  font-size: 24px;
+}
+
+.footer-social div a {
+  text-decoration: none;
+  color: #888888;
+}
+
+.footer-social div a i {
+  margin: 0 10px;
+}
+
+.footer-social h5 {
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.fa-facebook-f:hover {
+  color: #00456d;
+}
+
+.fa-twitter:hover {
+  color: #60c4ff;
+}
+
+.fa-linkedin-in:hover {
+  color: #1590d8;
+}
+
+.fa-google-plus-g:hover {
+  color: #af4426;
 }
 
 @media screen and (min-width: 1000px) {
