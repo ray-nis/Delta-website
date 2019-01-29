@@ -39,7 +39,7 @@
 }
 
 .accordion {
-    color: $secondary-color;
+    color: $main-color;
     font-family: $main-font;
     font-size: 17px;
     cursor: pointer;
@@ -61,14 +61,34 @@
     overflow: hidden;
 }
 
-.accordion:after {
-    content: '\02795';
-    font-size: 13px;
-    float: right;
+.about-team {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+
+    div {
+        text-align: center;
+        margin-bottom: 30px;
+        font-family: $main-font;
+        color: $secondary-color;
+        img {
+            width: 60%;
+            height: auto;
+        }
+
+        h3 {
+            margin: 10px;
+            font-size: 20px;
+        }
+    }
 }
 
-.active:after {
-    content: "\2796";
+.about-team-container h2 {
+    text-align: center;
+    font-family: $main-font;
+    font-size: 20px;
+    margin: 30px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -92,5 +112,11 @@
         .aa1 {
             width: 45%;
         }
+    }
+
+    .about-team {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 40px;
     }
 }
