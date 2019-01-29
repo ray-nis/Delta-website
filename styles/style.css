@@ -581,6 +581,51 @@
   }
 }
 
+.about-about {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.about-about img {
+  width: 100%;
+  height: auto;
+}
+
+.about-about div {
+  width: 100%;
+  font-family: "Open Sans";
+  color: #4e4f51;
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.about-about div h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.about-about div h2 span {
+  color: #ff5722;
+}
+
+@media screen and (min-width: 1000px) {
+  .about-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about-about img {
+    width: 45%;
+  }
+  .about-about div {
+    width: 45%;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
