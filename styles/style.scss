@@ -17,6 +17,13 @@ $secondary-color: #4e4f51;
     line-height: 1.3;
 }
 
+@mixin pagePharagraphs() {
+    font-family: $main-font;
+    color: $secondary-color;
+    font-size: 17px;
+    line-height: 1.3;
+}
+
 .pageTitle {
     display: flex;
     justify-content: center;
@@ -26,7 +33,7 @@ $secondary-color: #4e4f51;
     font-size: 20px;
     font-family: $main-font;
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 
