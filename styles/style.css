@@ -725,6 +725,25 @@
   }
 }
 
+.pricing-about {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Open Sans";
+  color: #4e4f51;
+  font-size: 17px;
+  line-height: 1.3;
+  padding-bottom: 30px;
+}
+
+.pricing-about h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.pricing-about h2 span {
+  color: #ff5722;
+}
+
 html {
   scroll-behavior: smooth;
 }
