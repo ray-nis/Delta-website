@@ -13,3 +13,56 @@
         }
     }
 }
+
+.contact-form form {
+    text-align: center;
+    input, textarea {
+        width: 80%;
+        padding: 5px 5px;
+        font-family: $main-font;
+        font-size: 17px;
+        margin-bottom: 20px;
+        border: 1px solid $secondary-color;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 2px;
+    }
+
+    input::placeholder, textarea::placeholder {
+        font-size: 13px;
+        font-family: $main-font;
+        color: $secondary-color;
+    }
+
+    input:focus, textarea:focus {
+        border-bottom: 1px solid $main-color;
+    }
+
+    button {
+        color: #fff;
+        background-color: $main-color;
+        padding: 12px 25px;
+        text-align: center;
+        font-family: $main-font;
+        margin: 20px 0;
+        transition: all 0.25s;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #fff;
+            color: $main-color;
+            border: 1px solid $main-color;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .contact-form form {
+        text-align: center;
+        input, textarea {
+            width: 50%;
+        }
+    }
+}
