@@ -1,0 +1,15 @@
+.contact-about {
+    width: 90%;
+    margin: 0 auto;
+    @include pagePharagraphs();
+    padding-bottom: 30px;
+
+    h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+
+        span {
+            color: $main-color;
+        }
+    }
+}
