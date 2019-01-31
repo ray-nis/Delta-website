@@ -5,10 +5,10 @@
         <hr>
         <a id="m1" href="../index.html"><h1>HOME</h1></a>
         <a id="m2" href="/pages/about.html"><h1>ABOUT US</h1></a>
-        <a href=""><h1>SERVICES</h1></a>
-        <a href=""><h1>PORTFOLIO</h1></a>
-        <a href="/pages/pricing.html"><h1>PRICING</h1></a>
-        <a href="/pages/contact.html"><h1>CONTACT</h1></a>
+        <a id="m3" href=""><h1>SERVICES</h1></a>
+        <a id="m4" href=""><h1>PORTFOLIO</h1></a>
+        <a id="m5" href="/pages/pricing.html"><h1>PRICING</h1></a>
+        <a id="m6" href="/pages/contact.html"><h1>CONTACT</h1></a>
     </nav>
 
 <script>
@@ -25,6 +25,14 @@
     } 
     else if (lastPart === "about.html") {
         document.querySelector("#m2").style.color = "red";
+    }
+
+    else if (lastPart === "pricing.html") {
+        document.querySelector("#m5").style.color = "red";
+    }
+
+    else if (lastPart === "contact.html") {
+        document.querySelector("#m6").style.color = "red";
     }
 </script>
 </div>
