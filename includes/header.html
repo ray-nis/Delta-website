@@ -5,7 +5,7 @@
         <hr>
         <a id="m1" href="../index.html"><h1>HOME</h1></a>
         <a id="m2" href="/pages/about.html"><h1>ABOUT US</h1></a>
-        <a id="m3" href=""><h1>SERVICES</h1></a>
+        <a id="m3" href="/pages/services.html"><h1>SERVICES</h1></a>
         <a id="m4" href="/pages/portfolio.html"><h1>PORTFOLIO</h1></a>
         <a id="m5" href="/pages/pricing.html"><h1>PRICING</h1></a>
         <a id="m6" href="/pages/contact.html"><h1>CONTACT</h1></a>
@@ -22,9 +22,14 @@
 
     if (lastPart === "" || lastPart === "index.html") {
         document.querySelector("#m1").style.color = "red";
-    } 
+    }
+
     else if (lastPart === "about.html") {
         document.querySelector("#m2").style.color = "red";
+    }
+
+    else if (lastPart === "services.html") {
+        document.querySelector("#m3").style.color = "red";
     }
 
     else if (lastPart === "portfolio.html") {
